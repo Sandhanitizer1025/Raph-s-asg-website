@@ -1,19 +1,32 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .black-nav {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex start;
+    gap: 20px;
     align-items: center;
-    padding: 15px 20px;
+    padding: 30px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.black-nav a {
+    text-decoration: none; /*To remove underline for band name*/
 }
 
 .band-name {
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
 }
 
@@ -22,10 +35,12 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .black-nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .black-nav ul li a {
@@ -35,5 +50,69 @@ body {
 }
 
 .black-nav ul li a:hover {
+    color: #38b2ac;
+}
+
+.band-background {
+    background-image: url(bandbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px; /* Adjust for fixed navigation bar */
+}
+
+.video-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.video-box {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-box iframe {
+    border-radius: 5px;
+}
+
+.social-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
     color: #38b2ac;
 }
