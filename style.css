@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.black-nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.band-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.black-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.black-nav ul li {
+    margin-right: 20px;
+}
+
+.black-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.black-nav ul li a:hover {
+    color: #38b2ac;
+}
