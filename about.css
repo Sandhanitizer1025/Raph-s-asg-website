@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth; /*ensure smooth scrolling*/
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.black-nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.black-nav a {
+  text-decoration: none;
+}
+
+.band-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.black-nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.black-nav ul li {
+  margin-right: 25px;
+}
+
+.black-nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.black-nav ul li a:hover {
+  color: #38b2ac;
+}
+
+.hero-section {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.history-section {
+  background-color: white;
+  padding: 100px 20px;
+}
+
+.history-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.history-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.history-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.booking-section {
+  background-color: rgb(255, 64, 0);
+  color: white;
+  padding: 60px 20px;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.booking-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.booking-contact {
+  flex: 1;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.booking-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.booking-contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.booking-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.booking-form {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.booking-submit {
+  background-color: #38b2ac;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.booking-submit:hover {
+  background-color: #2c7a7b;
+}
+
+@media (max-width: 768px) {
+  .booking-image {
+    height: auto;
+  }
+
+  .booking-overlay {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .booking-contact {
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .booking-form-container {
+    align-items: center;
+  }
+
+  .booking-form {
+    width: 100%;
+  }
+}
+
+.social-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #38b2ac;
+}
