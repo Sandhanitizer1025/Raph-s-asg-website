@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.black-nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.black-nav a {
+    text-decoration: none;
+}
+
+.band-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.black-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.black-nav ul li {
+    margin-right: 25px;
+}
+
+.black-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.black-nav ul li a:hover {
+    color: #38b2ac;
+}
+
+.tour-page {
+    background-color: #f0f0f0;
+    padding-top: 60px; /* Adjust for fixed navigation bar */
+}
+
+.tour-hero {
+    background-image: url(bandbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-title {
+    color: white;
+    font-size: 36px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tour-dates {
+    padding: 40px;
+}
+
+.tour-date-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.tour-date {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tour-date-title {
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
+.tour-date-info {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tour-date-button {
+    background-color: #38b2ac;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tour-date-button:hover {
+    background-color: #2c7a7b;
+}
+
+.social-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-icon {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #38b2ac;
+}
