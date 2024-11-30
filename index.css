@@ -54,7 +54,7 @@ body {
 }
 
 .band-background {
-    background-image: url(bandbackground.jpg);
+    background-image: url(images/bandbackground.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;

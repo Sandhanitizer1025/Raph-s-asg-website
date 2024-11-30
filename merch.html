@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Merch - Midnight Echoes</title>
+    <link href="merch.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <script src="merch.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="black-nav">
+        <a href="index.html"><div class="band-name">MIDNIGHT ECHOES</div></a>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="merch.html">Official Merch</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html#booking-section">Book Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="merch-page">
+      <section class="merch-hero">
+        <h1 class="merch-title">Official Merchandise</h1>
+      </section>
+
+      <section class="merch-content">
+        <h2 class="featured-title">Featured Items</h2>
+        <section class="merch-items">
+            
+          <div class="merch-item">
+            <div class="merch-image">
+              <img src="images/bandhoodie.jpg" alt="Band Hoodie" />
+            </div>
+            <div class="merch-details">
+              <h3 class="merch-name">Band Hoodie</h3>
+              <p class="merch-price">$80</p>
+              <button class="merch-button">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="merch-item">
+            <div class="merch-image">
+              <img src="images/bandtee.jpg" alt="Band Tee" />
+            </div>
+            <div class="merch-details">
+              <h3 class="merch-name">Band Tee</h3>
+              <p class="merch-price">$50</p>
+              <button class="merch-button">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="merch-item">
+            <div class="merch-image">
+              <img src="images/bandsweat.jpg" alt="Band Sweater" />
+            </div>
+            <div class="merch-details">
+              <h3 class="merch-name">Band Sweater</h3>
+              <p class="merch-price">$70</p>
+              <button class="merch-button">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="merch-item">
+            <div class="merch-image">
+              <img src="images/bandbeanie.jpg" alt="Band Beanie" />
+            </div>
+            <div class="merch-details">
+              <h3 class="merch-name">Band Beanie</h3>
+              <p class="merch-price">$35</p>
+              <button class="merch-button">Add to Cart</button>
+            </div>
+          </div>
+
+        </section>
+      </section>
+    </main>
+
+    <footer class="social-footer">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ngeeannpoly/?hl=en"class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ngeeannpoly/events/?locale=en_GB&_rdr"class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"class="social-icon"><i class="fab fa-spotify"></i></a>
+        <a href="https://music.apple.com/eg/artist/playboi-carti/982372505"class="social-icon"><i class="fab fa-apple"></i></a>
+        <a href="https://www.youtube.com/channel/UCIhzgEkhf4kFLU7mgIhSxOg"class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/ngeeannnp" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+          <span class="cart-close">&times;</span>
+          <h2>Your Cart</h2>
+          <div id="cart-items"></div>
+          <div class="cart-total">Total: $<span id="cart-total-amount">0</span></div>
+          <button id="checkout-button">Checkout</button>
+        </div>
+      </div>
+
+  </body>
+</html>
