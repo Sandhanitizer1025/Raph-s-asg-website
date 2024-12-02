@@ -30,6 +30,16 @@ body {
     font-weight: bold;
 }
 
+.menu-toggle {
+    display: none;
+    margin-right: 20px; /* Move it slightly to the left */
+    padding: 10px; /* Add some padding to increase click area */
+}
+
+.nav-menu {
+    display: flex;
+}
+
 .black-nav ul {
     list-style-type: none;
     display: flex;
@@ -147,4 +157,54 @@ body {
 .social-icon:hover {
     transform: scale(1.2);
     color: #38b2ac;
+}
+
+@media (max-width: 768px) {
+    .black-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu ul li {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .black-nav ul li {
+        margin: 0;
+    }
 }
