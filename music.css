@@ -30,7 +30,23 @@ body {
     font-weight: bold;
 }
 
-.black-nav ul {
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu ul {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -39,17 +55,17 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.black-nav ul li {
+.nav-menu ul li {
     margin-right: 25px;
 }
 
-.black-nav ul li a {
+.nav-menu ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.black-nav ul li a:hover {
+.nav-menu ul li a:hover {
     color: #38b2ac;
 }
 
@@ -175,4 +191,66 @@ body {
 .social-icon:hover {
     transform: scale(1.2);
     color: #38b2ac;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu ul li {
+        margin: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .music-hero {
+        height: 250px;
+    }
+
+    .music-title {
+        font-size: 28px;
+    }
+
+    .music-content {
+        padding: 20px;
+    }
+
+    .featured-title {
+        font-size: 24px;
+    }
+
+    .music-items {
+        grid-template-columns: 1fr;
+    }
+
+    .music-name {
+        font-size: 20px;
+    }
+
+    .music-price {
+        font-size: 16px;
+    }
 }
