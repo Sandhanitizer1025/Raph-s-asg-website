@@ -34,6 +34,23 @@ body {
   font-weight: bold;
 }
 
+/* Mobile Navigation Styles */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
 .black-nav ul {
   list-style-type: none;
   display: flex;
@@ -236,6 +253,43 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  /* Navigation Styles */
+  .black-nav {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .black-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .black-nav ul li {
+    margin: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  /* Booking Section Responsiveness */
   .booking-image {
     height: auto;
   }
@@ -268,8 +322,25 @@ body {
     gap: 15px;
   }
 
-  .performance-packages {
-    display: block;
-    margin-top: 20px;
+  /* Hero Section Responsiveness */
+  .hero-section {
+    height: 300px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  /* History Section Responsiveness */
+  .history-section {
+    padding: 50px 20px;
+  }
+
+  .history-title {
+    font-size: 28px;
+  }
+
+  .history-text {
+    font-size: 16px;
   }
 }
