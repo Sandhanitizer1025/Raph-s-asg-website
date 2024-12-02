@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merch - Midnight Echoes</title>
     <link href="merch.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
@@ -14,13 +14,18 @@
     <header>
       <nav class="black-nav">
         <a href="index.html"><div class="band-name">MIDNIGHT ECHOES</div></a>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tour.html">Tour</a></li>
-          <li><a href="merch.html">Official Merch</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="about.html#booking-section">Book Us</a></li>
-        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="merch.html">Official Merch</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="about.html#booking-section">Book Us</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -32,7 +37,6 @@
       <section class="merch-content">
         <h2 class="featured-title">Featured</h2>
         <section class="merch-items">
-            
           <div class="merch-item">
             <div class="merch-image">
               <img src="images/bandhoodie.jpg" alt="Band Hoodie" />
@@ -76,7 +80,6 @@
               <button class="merch-button">Add to Cart</button>
             </div>
           </div>
-
         </section>
       </section>
     </main>
@@ -93,14 +96,13 @@
     </footer>
 
     <div id="cart-modal" class="cart-modal">
-        <div class="cart-content">
-          <span class="cart-close">&times;</span>
-          <h2>Your Cart</h2>
-          <div id="cart-items"></div>
-          <div class="cart-total">Total: $<span id="cart-total-amount">0</span></div>
-          <button id="checkout-button">Checkout</button>
-        </div>
+      <div class="cart-content">
+        <span class="cart-close">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Total: $<span id="cart-total-amount">0</span></div>
+        <button id="checkout-button">Checkout</button>
       </div>
-
+    </div>
   </body>
 </html>
